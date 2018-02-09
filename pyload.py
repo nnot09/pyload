@@ -3,7 +3,7 @@ import os
 import urllib.request
 
 # Responsible for downloading and writing data to disk
-def	download(url, file):
+def download(url, file):
 	nstream = urllib.request.urlopen(url) # open network stream 
 	
 	# Delete existing file
