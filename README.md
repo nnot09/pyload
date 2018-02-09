@@ -4,7 +4,7 @@ This is pretty much my first attempt of writing something, more or less, simple 
 This simply downloads and executes an executable file directly from an url. 
 
 Example usage: 
-pyload.py <url> <file>
+
 pyload.py https://www.yourhost.com/update.exe C:\Updates\update.exe
   
  
