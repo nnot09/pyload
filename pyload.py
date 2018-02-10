@@ -31,10 +31,6 @@ def execute(file):
 args = sys.argv
 
 if len(args) != 3:
-	for x in args:
-		print(x)
-
-	print(len(args))
 	help = """ Invalid params. Example:
   script.py <url> <dest>
   script.py https://www.host.com/file.exe dropped.exe"""
